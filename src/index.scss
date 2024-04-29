@@ -1,0 +1,13 @@
+@import "style/variables/variable.scss";
+@import "style/pages/auth/loginPage";
+@import "style/components/sidebar";
+@import "style/pages/home.scss";
+@import "style/components/herosection";
+@import 'react-toastify/dist/ReactToastify.css';
+@import "style/partials/genral.scss";
+@import '@vidstack/react/player/styles/default/theme.css';
+@import '@vidstack/react/player/styles/default/layouts/video.css';
+@import "style/pages/movie.scss";
+@import "style/pages/allContent.scss";
+// video js style
+@import "video.js/dist/video-js.css";

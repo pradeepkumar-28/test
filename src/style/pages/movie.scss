@@ -1,0 +1,183 @@
+.movie_container {
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, rgba(0, 3, 28, 1) 0%, rgba(28, 9, 121, 0) 100%, rgba(0, 3, 28, 1) 100%);
+    }
+
+
+    .video-container {
+        .video-player {
+            height: 800px !important;
+            width: 90%;
+        }
+    }
+
+    .Movie-info-container {
+        position: absolute;
+        z-index: 1;
+        top: 5%;
+        left: 4%;
+        width: 95%;
+        height: 90%;
+
+        .left_Action {
+            height: 100%;
+
+            .Movie_info-Box {
+                .Movie_card {
+                    width: 100%;
+                    height: 650px;
+                    border-radius: 8px;
+
+                    .movie_poster {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 8px;
+                    }
+
+                }
+
+                .watch-btn {
+                    margin-top: 33px;
+                    background: $background-item;
+                    border-radius: 5px;
+                    display: block;
+                    padding: 12px 15px;
+                    text-align: center;
+                    width: 100%;
+                    font-size: 18px;
+                    position: relative;
+                    margin-bottom: 20px;
+                    font-family: $primary-font;
+                }
+            }
+        }
+
+        .right_Action {
+            height: 500px;
+            margin-left: 62px;
+
+            .Movie-content {
+                .movie_title {
+                    margin-top: 12px;
+                    font-size: 62px;
+                    width: fit-content;
+                    color: #fff;
+                    font-weight: 700;
+                    transition: color 0.3s ease;
+                    line-height: 76px;
+                    font-family: $primary-font;
+
+                    &:hover {
+
+                        color: $btn-bgcolor3;
+                    }
+
+                }
+
+                .movie_Tagline {
+                    font-family: $primary-font;
+                    font-size: 16px;
+                    width: fit-content;
+                    color: #fff;
+                    font-weight: 500;
+                    margin-top: 12px;
+                }
+
+                .genre_box {
+                    margin-top: 16px;
+                    display: flex;
+                    gap: 16px;
+
+                    p {
+                        color: rgb(204, 205, 210);
+                        font-size: 16px;
+                        font-weight: 500;
+                        font-family: $primary-font;
+                    }
+                }
+
+                .movie-info {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    margin-top: 8px;
+
+                    p {
+                        color: rgb(204, 205, 210);
+                        font-size: 16px;
+                        font-weight: 500;
+                        font-family: $primary-font;
+                    }
+                }
+
+                .desc {
+                    margin-top: 16px;
+                    color: rgb(204, 205, 210);
+                    font-size: 22px;
+                    font-weight: 700;
+                    font-family: $primary-font;
+                    width: 90%;
+                }
+
+                .movie-cast {
+                    margin-top: 22px;
+                    color: rgb(204, 205, 210);
+                    font-size: 22px;
+                    font-family: $primary-font;
+                    font-weight: 800;
+
+                    span {
+                        font-size: 18px;
+                        margin-left: 16px;
+                    }
+
+                }
+
+                .production_box {
+                    margin-top: 16px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    text-align: center;
+
+                    .production-title {
+                        font-size: 18px;
+                        color: rgb(204, 205, 210);
+                        font-weight: 700;
+                        font-family: $primary-font;
+                    }
+
+
+
+                    .title {
+                        margin-top: 6px;
+                        font-size: 14px;
+                        color: rgb(204, 205, 210);
+                        font-weight: 700;
+                        font-family: $primary-font;
+                    }
+
+
+
+
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.MuiModal-backdrop {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}

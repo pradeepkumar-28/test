@@ -1,0 +1,127 @@
+.Hero-section-container {
+    position: relative;
+    height: 75%;
+    width: 100%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(to top, rgba(0, 3, 28, 1) 1%, rgba(28, 9, 121, 0) 10%, rgba(0, 3, 28, 0) 100%);
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, rgba(0, 3, 28, 1) 0%, rgba(28, 9, 121, 0) 100%, rgba(0, 3, 28, 1) 100%);
+    }
+
+    .content {
+        position: absolute;
+        z-index: 3;
+        top: 23%;
+        left: 6%;
+
+        .movie_genres {
+            color: #fff;
+            opacity: 0.9;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+            margin-left: 12px;
+        }
+
+        .movie_title {
+            margin-top: 12px;
+            font-size: 62px;
+            color: #fff;
+            font-weight: 700;
+            transition: color 0.3s ease;
+            line-height: 76px;
+            width: fit-content;
+
+            &:hover {
+
+                color: $btn-bgcolor3;
+            }
+        }
+
+        .movie_info {
+            display: flex;
+            align-items: center;
+
+            i {
+                color: $btn-bgcolor3;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            .movie_info-text {
+                color: rgb(204, 205, 210);
+                margin: 10px;
+                font-size: 16px;
+                font-weight: 400;
+
+            }
+
+        }
+
+        .movie-desc {
+            color: rgb(204, 205, 210);
+            margin: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            max-width: 40%;
+            line-height: 25px;
+        }
+
+        .movie-info-btn {
+            margin-top: 20px;
+            background: linear-gradient(248.28deg, $btn-bgcolor 9.539999999999999%, rgba(142, 97, 255, 0) 32.8%), radial-gradient(81.70999999999999% 279.87% at -16.57% -92%, $btn-bgcolor2 28.69%, rgba(205, 219, 248, 0) 69.54000000000001%), $btn-bgcolor3;
+            background-blend-mode: normal, normal;
+            color: $btn-color;
+            border: 0;
+            padding: 15px 31px;
+            font-weight: 700;
+            line-height: 20px;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            transition: .2s ease;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+    }
+
+    .bg-video-container {
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+
+        .video-player {
+            height: 100% !important;
+        }
+    }
+
+    .video-poster {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+
+    .mute-btn {
+        padding: 15px;
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+        z-index: 1;
+    }
+}

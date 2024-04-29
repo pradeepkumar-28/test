@@ -1,0 +1,88 @@
+.login_container {
+    height: 100vh;
+    width: 100vw;
+
+    .Login_content {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: start;
+        background: rgba(0, 0, 0, .7);
+        max-width: 470px;
+        height: 800px;
+        backdrop-filter: blur(1.5625em);
+        border-radius: 8px;
+
+        .Login-form {
+            display: flex;
+            justify-content: center;
+            margin: 16px;
+            padding: 20px;
+            flex-direction: column;
+
+            img {
+                margin: auto;
+                width: 11.25em;
+                margin-bottom: 3em;
+            }
+
+            .Input-field {
+                margin-top: 16px;
+
+                .MuiInputLabel-formControl {
+                    color: #fff;
+                    font-size: 16px;
+                }
+
+                input {
+                    background-color: #000;
+                    color: #fff;
+                    font-size: 16px;
+                    border-radius: 8px;
+                    font-family: $primary-font !important;
+                    font-weight: 400;
+
+                    &::placeholder {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .signupbtn {
+                height: 60px;
+                background-image: linear-gradient(248.28deg, $btn-bgcolor 9.54%, rgba(142, 97, 255, 0) 32.8%),
+                    radial-gradient(81.71% 279.87% at -16.57% -92%, $btn-bgcolor2 28.69%, rgba(205, 219, 248, 0) 69.54%),
+                    $btn-bgcolor3;
+                font-family: $primary-font !important;
+                font-weight: 400;
+
+            }
+
+        }
+    }
+
+    .bg-video-container {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 0;
+
+        .video-player {
+            transform: scale(1.4);
+        }
+    }
+
+    .bg-video-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+}

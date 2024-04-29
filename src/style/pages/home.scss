@@ -1,0 +1,96 @@
+.home_Container {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+
+    .Popular_Movies-container {
+        margin-left: 121px;
+
+        .title {
+            font-weight: 700;
+            font-size: 21px;
+            color: rgb(255, 255, 255);
+            font-family: $primary-font !important;
+        }
+
+        .view_all-btn {
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            font-family: $primary-font !important;
+
+            .icon {
+                margin-left: 10px;
+            }
+        }
+    }
+
+
+
+}
+
+
+.Popular_Movies-content {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    display: flex;
+    gap: 23px;
+
+    .slick-slider {
+        width: 86vw;
+
+        .slick-list {
+            height: 300px;
+            padding: 16px;
+
+            .slick-track {
+                display: flex;
+                gap: 18px;
+            }
+
+            .MuiPaper-rounded {
+                height: 300px;
+                width: 235px !important;
+                transition: transform 0.2s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.08);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+        }
+
+        .category-card {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+
+
+            .category_name {
+                font-family: $primary-font;
+                font-size: 22px;
+                font-weight: 500;
+                text-align: center;
+
+            }
+        }
+    }
+
+    .slick-arrow,
+    .slick-prev {
+        color: #fff;
+
+        &::before {
+            color: $btn-bgcolor3;
+            font-size: 22px;
+        }
+
+    }
+}
