@@ -1,7 +1,9 @@
 import { Box, IconButton, Tooltip } from "@mui/material";
 import { Outlet } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Sidebar() {
+  const navigate = useNavigate();
   const menuData = [
     {
       id: 1,
@@ -50,7 +52,10 @@ function Sidebar() {
             })}
           </Box>
           <Tooltip title="settings" placement="right">
-            <IconButton className="iconButton">
+            <IconButton
+              className="iconButton"
+              onClick={() => navigate("/login")}
+            >
               <i className="fa-solid fa-user icon"></i>
             </IconButton>
           </Tooltip>
